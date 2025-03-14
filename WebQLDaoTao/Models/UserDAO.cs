@@ -13,7 +13,7 @@ namespace WebQLDaoTao.Models
         {
             bool isValid = false;
 
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringName"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["WebQLDaoTao_Constr1"].ConnectionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand("select pwd from users where uname=@uname", conn);
             cmd.Parameters.AddWithValue("@uname", username);

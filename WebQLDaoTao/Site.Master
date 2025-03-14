@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href="Contents/pagination.css" rel="stylesheet" />
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         /* Set black background color, white text and some padding */
@@ -16,18 +16,22 @@
             color: white;
             padding: 15px;
         }
+
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
         }
+
         .row.content {
             height: 450px
         }
+
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100%;
         }
+
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
@@ -40,10 +44,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">WebDaoTao</a>
+                    <a class="navbar-brand" href="Default.aspx">WebDaoTao</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="Default.aspx">Trang chủ</a></li>
@@ -57,7 +61,10 @@
                             <li><a href="QLSinhVien.aspx">Sinh viên</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Quản lý điểm thi</a></li>
+                    <li><a href="NhapDiem.aspx"></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="Logout.aspx"> Logout </a> </li>
                 </ul>
             </div>
         </nav>
@@ -85,7 +92,7 @@
             </div>
         </div>
         <footer class="container-fluid text-center">
-            <p>Sinh viên thực hiện: 2321160029 - ThyThy</p>
+            <p>Sinh thực hiện: 2321160029 - ThyThy</p>
         </footer>
     </form>
 </body>
